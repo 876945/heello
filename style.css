@@ -1,0 +1,64 @@
+/* Reset & fonts */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { 
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); 
+    color: #fff; 
+    min-height: 100vh; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    padding:20px; 
+}
+
+.div { 
+    background: rgba(0,0,0,0.8); 
+    padding: 30px; 
+    border-radius:15px; 
+    max-width:700px; 
+    text-align:center; 
+    box-shadow:0 10px 25px rgba(0,0,0,0.5); 
+    position: relative; 
+}
+
+/* Logo */
+.img { 
+    width: 120px; 
+    height: 120px; 
+    border-radius:50%; 
+    margin-bottom:20px; 
+    border:3px solid #fff; 
+}
+
+/* Headings */
+.h { font-size:2.5rem; margin-bottom:15px; color:#ffd700; }
+.h2 { font-size:1.5rem; margin:20px 0; color:#00ffea; }
+
+/* Paragraph */
+.p { font-size:1rem; line-height:1.6; margin-bottom:20px; }
+.npl { color:#ff4500; font-weight:bold; }
+.nt { color:#00ffff; font-weight:bold; }
+
+/* List */
+.ul { list-style-type:square; text-align:left; margin-top:20px; }
+.ul li { margin-bottom:10px; font-size:1rem; }
+.ul a { color:#00ffea; text-decoration:none; font-weight:bold; transition:0.3s; }
+.ul a:hover { color:#ffd700; text-decoration:underline; }
+
+/* Buttons */
+.btn { padding:12px 25px; border:none; border-radius:8px; background:#00ffea; color:#000; font-weight:700; cursor:pointer; margin:10px; transition:0.3s; }
+.btn:hover { background:#ffd700; }
+
+/* Form */
+form { display:none; flex-direction:column; margin-top:20px; }
+input { padding:12px; margin:10px 0; border-radius:8px; border:none; outline:none; }
+.error { color:#ff4d4d; margin-top:10px; display:none; }
+
+/* Subscribe check */
+.subscribe-check { margin-top:20px; }
+
+@media(max-width:768px) { 
+    .h{font-size:2rem;} 
+    .h2{font-size:1.2rem;} 
+    .ul li{font-size:0.95rem;} 
+}
